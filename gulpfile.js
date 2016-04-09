@@ -1,16 +1,17 @@
-var autoprefixer = require('autoprefixer');
-var browserSync  = require('browser-sync');
-var cssnext      = require('postcss-cssnext');
-var csswring     = require('csswring');
-var del          = require('del');
-var gulp         = require('gulp');
-var imagemin     = require('gulp-imagemin');
-var mqpacker     = require('css-mqpacker');
-var postcss      = require('gulp-postcss');
-var sourcemaps   = require('gulp-sourcemaps');
+var autoprefixer = require('autoprefixer'),
+    browserSync  = require('browser-sync'),
+    cssimport    = require('postcss-import'),
+    cssnext      = require('postcss-cssnext'),
+    csswring     = require('csswring'),
+    del          = require('del'),
+    gulp         = require('gulp'),
+    imagemin     = require('gulp-imagemin'),
+    mqpacker     = require('css-mqpacker'),
+    postcss      = require('gulp-postcss'),
+    sourcemaps   = require('gulp-sourcemaps');
 
 var paths = {
-  css:    'app/css/*.css',
+  css:    'app/css/styles.css',
   html:   'app/*.html',
   images: 'app/images/**/*'
 };
@@ -23,9 +24,10 @@ gulp.task('clean', function() {
 // Post CSS transformation
 gulp.task('css', function() {
   var processors = [
-    cssnext(),
-    mqpacker(),
-    csswring()
+    cssimport(), // import all CSS into one file
+    cssnext(),   // use next-generation CSS
+    mqpacker(),  // move similar media-queries together
+    csswring()   // compact the sh** out of it
   ];
 
   return gulp.src(paths.css)

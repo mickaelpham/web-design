@@ -1,3 +1,6 @@
+@import "normalize.css"; /* from node modules */
+@import "navbar";
+
 :root {
   --mainColor: rebeccapurple;
 }
