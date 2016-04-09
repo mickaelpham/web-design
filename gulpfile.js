@@ -1,11 +1,12 @@
 var autoprefixer = require('autoprefixer');
 var browserSync  = require('browser-sync');
 var cssnext      = require('postcss-cssnext');
+var csswring     = require('csswring');
 var del          = require('del');
 var gulp         = require('gulp');
 var imagemin     = require('gulp-imagemin');
+var mqpacker     = require('css-mqpacker');
 var postcss      = require('gulp-postcss');
-var precss       = require('precss');
 var sourcemaps   = require('gulp-sourcemaps');
 
 var paths = {
@@ -21,9 +22,15 @@ gulp.task('clean', function() {
 
 // Post CSS transformation
 gulp.task('css', function() {
+  var processors = [
+    cssnext(autoprefixer({ browsers: ['last 2 versions'] })),
+    mqpacker(),
+    csswring()
+  ];
+
   return gulp.src(paths.css)
     .pipe(sourcemaps.init())
-    .pipe(postcss([autoprefixer, precss]))
+    .pipe(postcss(processors))
     .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest('build/css'))
     .pipe(browserSync.stream());

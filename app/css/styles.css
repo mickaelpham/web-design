@@ -1,7 +1,16 @@
+:root {
+  --mainColor: rebeccapurple;
+}
+
 body {
   font-family: Arial, sans-serif;
 }
 
 .container {
   width: 960px;
+  margin: auto;
+}
+
+a {
+  color: var(--mainColor);
 }
