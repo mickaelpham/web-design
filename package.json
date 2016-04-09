@@ -1,0 +1,25 @@
+{
+  "name": "slowandsteady",
+  "version": "1.0.0",
+  "description": "just the design for slow and steady",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mickaelpham/slowandsteady.info.git"
+  },
+  "keywords": [
+    "design"
+  ],
+  "author": "Mickael Pham <mickael.pham@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mickaelpham/slowandsteady.info/issues"
+  },
+  "homepage": "https://github.com/mickaelpham/slowandsteady.info#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}
