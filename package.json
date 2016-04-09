@@ -20,7 +20,14 @@
   },
   "homepage": "https://github.com/mickaelpham/slowandsteady.info#readme",
   "devDependencies": {
+    "autoprefixer": "^6.3.6",
     "browser-sync": "^2.11.2",
-    "gulp": "^3.9.1"
+    "del": "^2.2.0",
+    "gulp": "^3.9.1",
+    "gulp-imagemin": "^2.4.0",
+    "gulp-postcss": "^6.1.0",
+    "gulp-sourcemaps": "^1.6.0",
+    "postcss-cssnext": "^2.5.2",
+    "precss": "^1.4.0"
   }
 }
