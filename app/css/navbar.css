@@ -1,3 +1,46 @@
-.navbar {
-  width: 120px;
+.top-navbar {
+
+  border-bottom: #e2edf2 1px solid;
+
+  & header {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  & .site-name {
+    font-size: 2.3rem;
+    margin-bottom: 0;
+    font-style: italic;
+    letter-spacing: .2rem;
+  }
+
+  & .nav {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    margin-bottom: 0;
+  }
+
+  & li {
+    margin-bottom: 0;
+  }
+
+  & li a {
+    display: block;
+    padding: 3rem 1.5rem;
+  }
+
+  & a, & a:visited {
+    color: black;
+    text-transform: uppercase;
+    transition: color .2s;
+  }
+
+  & a:hover {
+    color: var(--linkColor);
+    text-decoration: none;
+  }
+
 }

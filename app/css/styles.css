@@ -1,23 +1,4 @@
-@import "normalize.css"; /* from node modules */
+@import "normalize.css";
+@import "skeleton";
+@import "base";
 @import "navbar";
-
-:root {
-  --mainColor: rebeccapurple;
-}
-
-body {
-  font-family: Arial, sans-serif;
-}
-
-.container {
-  width: 960px;
-  margin: auto;
-}
-
-a {
-  color: var(--mainColor);
-}
-
-a:hover {
-  color: black;
-}

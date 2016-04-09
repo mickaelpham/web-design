@@ -11,7 +11,7 @@ var autoprefixer = require('autoprefixer'),
     sourcemaps   = require('gulp-sourcemaps');
 
 var paths = {
-  css:    'app/css/styles.css',
+  css:    'app/css/*.css',
   html:   'app/*.html',
   images: 'app/images/**/*'
 };
@@ -26,11 +26,11 @@ gulp.task('css', function() {
   var processors = [
     cssimport(), // import all CSS into one file
     cssnext(),   // use next-generation CSS
-    mqpacker(),  // move similar media-queries together
-    csswring()   // compact the sh** out of it
+    mqpacker()  // move similar media-queries together
+    // csswring()   // compact the sh** out of it
   ];
 
-  return gulp.src(paths.css)
+  return gulp.src('app/css/styles.css')
     .pipe(sourcemaps.init())
     .pipe(postcss(processors))
     .pipe(sourcemaps.write('.'))
@@ -63,7 +63,9 @@ gulp.task('browser-sync', ['watch'], function() {
   browserSync.init({
     server: {
       baseDir: './build'
-    }
+    },
+    
+    notify: false
   });
 });
 

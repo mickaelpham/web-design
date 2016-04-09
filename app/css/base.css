@@ -1,0 +1,13 @@
+:root {
+  --linkColor: #5ba4e5;
+}
+
+a, a:visited {
+  color: var(--linkColor);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--linkColor);
+  text-decoration: underline;
+}
