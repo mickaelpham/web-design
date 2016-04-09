@@ -23,7 +23,7 @@ gulp.task('clean', function() {
 // Post CSS transformation
 gulp.task('css', function() {
   var processors = [
-    cssnext(autoprefixer({ browsers: ['last 2 versions'] })),
+    cssnext(),
     mqpacker(),
     csswring()
   ];

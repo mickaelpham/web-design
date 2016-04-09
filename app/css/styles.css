@@ -14,3 +14,7 @@ body {
 a {
   color: var(--mainColor);
 }
+
+a:hover {
+  color: black;
+}
