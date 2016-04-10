@@ -1,4 +1,7 @@
 @import "normalize.css";
 @import "skeleton";
 @import "base";
+@import "layout";
 @import "navbar";
+@import "footer";
+@import "homepage";

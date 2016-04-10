@@ -1,5 +1,7 @@
 :root {
   --linkColor: #5ba4e5;
+  --borderColor: #e2edf2;
+  --dimedText: #9eabb3;
 }
 
 a, a:visited {

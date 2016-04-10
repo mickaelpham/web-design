@@ -1,0 +1,29 @@
+footer {
+  text-align: center;
+  padding: 3rem 0;
+  border-top: var(--borderColor) 1px solid;
+
+  & a, & a:visited {
+    color: black;
+    transition: color 0.2s;
+  }
+
+  & a:hover {
+    color: var(--linkColor);
+    text-decoration: none;
+  }
+
+  & p {
+    margin-bottom: 0;
+  }
+
+  & ul {
+    list-style: none;
+  }
+
+  & li {
+    display: inline-block;;
+    font-size: 2.2rem;
+    margin: 0 .8rem;
+  }
+}

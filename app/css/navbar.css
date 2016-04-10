@@ -1,8 +1,8 @@
-.top-navbar {
+header {
 
-  border-bottom: #e2edf2 1px solid;
+  border-bottom: var(--borderColor) 1px solid;
 
-  & header {
+  & .top-navbar {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
@@ -30,6 +30,7 @@
   & li a {
     display: block;
     padding: 3rem 1.5rem;
+    font-size: 1.3rem;
   }
 
   & a, & a:visited {

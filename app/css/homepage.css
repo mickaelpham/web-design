@@ -1,0 +1,30 @@
+article {
+  border-bottom: var(--borderColor) 1px dashed;
+  margin-bottom: 3rem;
+}
+
+.article-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.article-meta {
+  color: var(--dimedText);
+  margin-bottom: 1rem;
+}
+
+.subscribe-hero {
+  text-align: center;
+}
+
+.subscribe-catch {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 2.2rem;
+}
+
+.subscribe-text {
+  color: var(--dimedText);
+  margin-bottom: 1.5rem;
+}

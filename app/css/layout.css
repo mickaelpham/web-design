@@ -1,0 +1,9 @@
+/*.wrapper {
+  display: flex;
+  flex-flow: column nowrap;
+}*/
+
+.main {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
