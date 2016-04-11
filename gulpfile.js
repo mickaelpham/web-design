@@ -26,8 +26,8 @@ gulp.task('css', function() {
   var processors = [
     cssimport(), // import all CSS into one file
     cssnext(),   // use next-generation CSS
-    mqpacker()  // move similar media-queries together
-    // csswring()   // compact the sh** out of it
+    mqpacker(),  // move similar media-queries together
+    csswring()   // compact the sh** out of it
   ];
 
   return gulp.src('app/css/styles.css')
@@ -64,9 +64,10 @@ gulp.task('browser-sync', ['watch'], function() {
     server: {
       baseDir: './build'
     },
-    
+
     notify: false
   });
 });
 
+gulp.task('build', ['clean', 'html', 'css', 'images']);
 gulp.task('default', ['html', 'css', 'images', 'browser-sync']);
