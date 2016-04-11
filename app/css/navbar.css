@@ -12,9 +12,9 @@ header {
   & .site-name {
 
     font-size: 2.3rem;
-    margin-bottom: 0;
+    margin: 1.5rem 0;
     font-style: italic;
-    letter-spacing: .2rem;
+    letter-spacing: .05rem;
 
     & a, & a:visited {
       color: black;
@@ -65,8 +65,8 @@ a.to-nav {
   color: #fff;
   background: #4e4e4e;
   text-decoration: none;
-  padding: 0 10px;
-  font-size: 12px;
+  padding: 5px 15px;
+  font-size: 15px;
   font-weight: bold;
   line-height: 22px;
   height: 22px;
@@ -79,6 +79,60 @@ a.to-nav:hover,
 a.to-nav:focus {
   color: #1c1c1c;
   background: #ccc;
+}
+
+/* navigation */
+#primary-nav {
+
+  & ul {
+      list-style: none;
+      margin-bottom: 0;
+  }
+
+  & li {
+    margin: 0;
+  }
+
+  & li a {
+    display: block;
+    padding: 1rem 20px;
+    font-size: 1.3rem;
+    border-top: var(--borderColor) 1px solid;
+  }
+
+  /*& li:last-child a {
+    border-bottom: none;
+  }*/
+
+  & a, & a:visited {
+    color: black;
+    text-transform: uppercase;
+    transition: color .2s;
+  }
+
+  & a:hover {
+    color: var(--linkColor);
+    text-decoration: none;
+    background: color(var(--borderColor) alpha(-50%));
+  }
+
+  /*& li a {
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    line-height: 2rem;
+    height: 2rem;
+    border-bottom: 1px solid #383838;
+  }
+
+
+
+  & li a:hover, & li a:focus {
+    color: #1c1c1c;
+    background: #ccc;
+  }*/
+
 }
 
 /* Larger than mobile */
