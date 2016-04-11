@@ -19,7 +19,6 @@ header {
     & a, & a:visited {
       color: black;
       text-transform: uppercase;
-      transition: color .2s;
     }
 
     & a:hover {
@@ -49,7 +48,6 @@ header {
     & a, & a:visited {
       color: black;
       text-transform: uppercase;
-      transition: color .2s;
     }
 
     & a:hover {
@@ -111,7 +109,6 @@ a.to-nav:focus {
   & a, & a:visited {
     color: black;
     text-transform: uppercase;
-    transition: color .2s;
   }
 
   & a:hover {

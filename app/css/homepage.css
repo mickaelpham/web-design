@@ -9,6 +9,17 @@ article {
   margin-bottom: 0;
 }
 
+.article-title a,
+.article-title a:visited {
+  color: black;
+}
+
+.article-title a:hover,
+.article-title a:focus {
+  color: var(--linkColor);
+  text-decoration: none;
+}
+
 .article-meta {
   color: var(--dimedText);
   margin-bottom: 1rem;
