@@ -48,8 +48,15 @@
     padding: 0; }
 }
 
-/* For devices larger than 550px */
+/* Larger than phablet  */
 @media (min-width: 550px) {
+  .container {
+    width: 88%;
+  }
+}
+
+/* For devices larger than 750px */
+@media (min-width: 750px) {
   .container {
     width: 80%; }
   .column,
@@ -153,14 +160,6 @@ h6 { font-size: 1.5rem; line-height: 1.6;  letter-spacing: 0; }
 
 p {
   margin-top: 0; }
-
-
-/* Links
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-a {
-  color: #1EAEDB; }
-a:hover {
-  color: #0FA0CE; }
 
 
 /* Buttons
@@ -405,10 +404,10 @@ there.
 /* Larger than mobile */
 @media (min-width: 400px) {}
 
-/* Larger than phablet (also point when grid becomes active) */
+/* Larger than phablet  */
 @media (min-width: 550px) {}
 
-/* Larger than tablet */
+/* Larger than tablet (also point when grid becomes active) */
 @media (min-width: 750px) {}
 
 /* Larger than desktop */

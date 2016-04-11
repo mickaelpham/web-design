@@ -10,38 +10,88 @@ header {
   }
 
   & .site-name {
+
     font-size: 2.3rem;
     margin-bottom: 0;
     font-style: italic;
     letter-spacing: .2rem;
+
+    & a, & a:visited {
+      color: black;
+      text-transform: uppercase;
+      transition: color .2s;
+    }
+
+    & a:hover {
+      color: var(--linkColor);
+      text-decoration: none;
+    }
+
   }
 
   & .nav {
+
     display: flex;
     list-style: none;
     align-items: center;
     margin-bottom: 0;
-  }
 
-  & li {
-    margin-bottom: 0;
-  }
+    & li {
+      margin-bottom: 0;
+    }
 
-  & li a {
-    display: block;
-    padding: 3rem 1.5rem;
-    font-size: 1.3rem;
-  }
+    & li a {
+      display: block;
+      padding: 3rem 1.5rem;
+      font-size: 1.3rem;
+    }
 
-  & a, & a:visited {
-    color: black;
-    text-transform: uppercase;
-    transition: color .2s;
-  }
+    & a, & a:visited {
+      color: black;
+      text-transform: uppercase;
+      transition: color .2s;
+    }
 
-  & a:hover {
-    color: var(--linkColor);
-    text-decoration: none;
+    & a:hover {
+      color: var(--linkColor);
+      text-decoration: none;
+    }
+
   }
 
 }
+
+a.to-nav {
+  color: #fff;
+  background: #4e4e4e;
+  text-decoration: none;
+  padding: 0 10px;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 22px;
+  height: 22px;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  border-radius: 2px;
+}
+
+a.to-nav:hover,
+a.to-nav:focus {
+  color: #1c1c1c;
+  background: #ccc;
+}
+
+/* Larger than mobile */
+@media (min-width: 400px) {}
+
+/* Larger than phablet  */
+@media (min-width: 550px) {}
+
+/* Larger than tablet (also point when grid becomes active) */
+@media (min-width: 750px) {}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {}
