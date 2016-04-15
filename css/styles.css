@@ -1,0 +1,117 @@
+body {
+  font-family: 'Roboto', sans-serif; }
+
+a,
+a:visited {
+  color: LightSlateGray;
+  text-decoration: none; }
+a:hover,
+a:focus { color: SlateGray; }
+
+/* Header */
+.header {
+  border-bottom: 1px solid LightGray; }
+.header > .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+.site-title {
+  margin: 0;
+  padding: 10px; }
+.site-navigation {
+  display: none; }
+.btn-menu {
+  margin-right: 10px;
+  padding: 5px 10px;
+  border: 1px solid LightGray;
+  border-radius: 3px; }
+.btn-menu:hover {
+  background: WhiteSmoke; }
+
+/* Main */
+.main {
+  border-bottom: 1px solid LightGray;
+  padding: 10px; }
+
+/* Article */
+.article {
+  border-bottom: 1px dashed LightGray; }
+.article-title {
+  margin-bottom: 0px; }
+.article-meta {
+  color: Gray; }
+
+/* Aside */
+.aside {
+  border-bottom: 1px solid LightGray;
+  padding: 10px; }
+
+/* Mobile navigation */
+.mobile-site-navigation ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px; }
+.mobile-site-navigation li a {
+  display: block;
+  padding: 10px;
+  border-bottom: 1px solid LightGray;
+  font-weight: bold; }
+.mobile-site-navigation li a:hover {
+  background: WhiteSmoke; }
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 2em 0px; }
+.footer ul {
+  margin: 10px 0 0 0;
+  padding: 0;
+  list-style: none; }
+.footer li {
+  display: inline;
+  margin: 0px 10px; }
+
+/* For tablets and bigger screens */
+@media all and (min-width: 750px) {
+  .site-title {
+    margin: 0px; }
+  .site-navigation {
+    display: block; }
+  .btn-menu {
+    display: none; }
+  .site-navigation ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-flow: row; }
+  .site-navigation li a {
+    display: block;
+    padding: 1.5em; }
+  .site-navigation li a:hover {
+    background: WhiteSmoke; }
+  .wrapper {
+    display: flex;
+    flex-flow: row; }
+  .main {
+    flex: 1 70%; }
+  .aside {
+    flex: 1 30%;
+    padding-left: 40px; }
+  .mobile-site-navigation {
+    display: none; }
+}
+
+/* For large displays */
+@media all and (min-width: 1000px) {
+  .container {
+    width: 960px;
+    margin: auto; }
+  .aside {
+    padding-right: 0px;
+    text-align: right; }
+  .main, .aside {
+    border-bottom: none; }
+  .footer {
+    border-top: 1px solid LightGray; }
+}
